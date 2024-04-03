@@ -13,6 +13,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <!-- Font Awesome Icons -->
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     @routes
     @vite(['resources/css/app.css', 'resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
     @inertiaHead
@@ -23,6 +29,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     @inertia
     @env('local')
     @endenv
+
     <script>
         window._asset = '{{asset(" / ")}}';
     </script>
